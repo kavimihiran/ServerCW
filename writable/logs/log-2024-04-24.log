@@ -1,0 +1,285 @@
+INFO - 2024-04-24 05:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 05:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 05:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 05:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 05:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 05:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 05:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 05:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 05:56:43 --> ErrorException: Undefined variable $comment
+in APPPATH\Views\answer.php on line 156.
+ 1 APPPATH\Views\answer.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comment', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 156)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(38): view('answer')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-24 05:57:06 --> ErrorException: Undefined variable $comments
+in APPPATH\Views\answer.php on line 149.
+ 1 APPPATH\Views\answer.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comments', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 149)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(38): view('answer')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 05:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 05:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 05:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 05:57:14 --> ErrorException: Undefined variable $comments
+in APPPATH\Views\answer.php on line 149.
+ 1 APPPATH\Views\answer.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comments', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 149)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(38): view('answer')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-24 06:24:42 --> ErrorException: Undefined variable $comments
+in APPPATH\Views\answer.php on line 138.
+ 1 APPPATH\Views\answer.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comments', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 138)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(38): view('answer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 06:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 06:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 06:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 06:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 06:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 06:24:57 --> ErrorException: Undefined variable $comments
+in APPPATH\Views\answer.php on line 138.
+ 1 APPPATH\Views\answer.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comments', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 138)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(38): view('answer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-24 06:26:44 --> ErrorException: Undefined variable $comments
+in APPPATH\Views\answer.php on line 139.
+ 1 APPPATH\Views\answer.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comments', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 139)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(38): view('answer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-24 06:26:45 --> ErrorException: Undefined variable $comments
+in APPPATH\Views\answer.php on line 139.
+ 1 APPPATH\Views\answer.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comments', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 139)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(38): view('answer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 06:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 06:27:03 --> ErrorException: Undefined variable $comments
+in APPPATH\Views\answer.php on line 139.
+ 1 APPPATH\Views\answer.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comments', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 139)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(38): view('answer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-24 06:27:05 --> ErrorException: Undefined variable $comments
+in APPPATH\Views\answer.php on line 139.
+ 1 APPPATH\Views\answer.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comments', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 139)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(38): view('answer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 06:27:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 06:27:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 06:27:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 06:27:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 06:27:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 06:27:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 06:27:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 06:27:08 --> ErrorException: Undefined variable $comments
+in APPPATH\Views\answer.php on line 139.
+ 1 APPPATH\Views\answer.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comments', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 139)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(38): view('answer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-24 06:27:37 --> ErrorException: Undefined variable $comment
+in APPPATH\Views\answer.php on line 146.
+ 1 APPPATH\Views\answer.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comment', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 146)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(38): view('answer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-24 06:27:38 --> ErrorException: Undefined variable $comment
+in APPPATH\Views\answer.php on line 146.
+ 1 APPPATH\Views\answer.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comment', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 146)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(38): view('answer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-24 06:27:38 --> ErrorException: Undefined variable $comment
+in APPPATH\Views\answer.php on line 146.
+ 1 APPPATH\Views\answer.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comment', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 146)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(38): view('answer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-24 06:27:38 --> ErrorException: Undefined variable $comment
+in APPPATH\Views\answer.php on line 146.
+ 1 APPPATH\Views\answer.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comment', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 146)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(38): view('answer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-24 06:27:39 --> ErrorException: Undefined variable $comment
+in APPPATH\Views\answer.php on line 146.
+ 1 APPPATH\Views\answer.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comment', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 146)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(38): view('answer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-24 06:27:39 --> ErrorException: Undefined variable $comment
+in APPPATH\Views\answer.php on line 146.
+ 1 APPPATH\Views\answer.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comment', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 146)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(38): view('answer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-24 06:27:39 --> ErrorException: Undefined variable $comment
+in APPPATH\Views\answer.php on line 146.
+ 1 APPPATH\Views\answer.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comment', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 146)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(38): view('answer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 06:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 06:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 06:50:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 06:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 06:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:05:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:07:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:08:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:11:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:59:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:59:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:59:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:59:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:59:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 07:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 07:59:18 --> BadMethodCallException: Call to undefined method App\Models\QuestionModel::search
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Questions.php(97): CodeIgniter\Model->__call('search', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questions->search()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questions))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 07:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 08:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 08:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 08:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 08:13:05 --> BadMethodCallException: Call to undefined method App\Models\QuestionModel::search
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Questions.php(97): CodeIgniter\Model->__call('search', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questions->search()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questions))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 10:23:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-24 10:23:19 --> BadMethodCallException: Call to undefined method App\Models\QuestionModel::search
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Questions.php(97): CodeIgniter\Model->__call('search', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questions->search()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questions))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-24 10:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 10:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 10:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 10:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 10:23:58 --> Question ID: 17, Action: up
+INFO - 2024-04-24 10:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 10:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 10:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 10:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 10:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 10:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 10:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 10:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 10:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 10:24:52 --> Question ID: 6, Action: up
+INFO - 2024-04-24 10:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 10:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 10:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-24 10:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

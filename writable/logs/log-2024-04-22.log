@@ -1,0 +1,507 @@
+INFO - 2024-04-22 05:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 05:54:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 05:54:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 05:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 06:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-22 06:40:22 --> mysqli_sql_exception: Table 'server.answers' doesn't exist in C:\xampp\htdocs\serverCw\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\serverCw\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `questio...', 0)
+#1 C:\xampp\htdocs\serverCw\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `questio...')
+#2 C:\xampp\htdocs\serverCw\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `questio...')
+#3 C:\xampp\htdocs\serverCw\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `questio...', Array, false)
+#4 C:\xampp\htdocs\serverCw\app\Models\AnswerModel.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\serverCw\app\Controllers\Answers.php(39): App\Models\AnswerModel->getanswers('22')
+#6 C:\xampp\htdocs\serverCw\system\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+#7 C:\xampp\htdocs\serverCw\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+#8 C:\xampp\htdocs\serverCw\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\serverCw\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-22 06:40:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'server.answers' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `question_id`, `body`
+FROM `answers`
+WHERE `question_id` = :question_id:', [...], false)
+ 2 APPPATH\Models\AnswerModel.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Answers.php(39): App\Models\AnswerModel->getanswers('22')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-22 06:40:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'server.answers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `question_id`, `body`
+FROM `answers`
+WHERE `question_id` = \'22\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `question_id`, `body`
+FROM `answers`
+WHERE `question_id` = \'22\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `question_id`, `body`
+FROM `answers`
+WHERE `question_id` = :question_id:', [...], false)
+ 4 APPPATH\Models\AnswerModel.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Answers.php(39): App\Models\AnswerModel->getanswers('22')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-22 06:40:22 --> [Caused by] mysqli_sql_exception: Table 'server.answers' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `question_id`, `body`
+FROM `answers`
+WHERE `question_id` = \'22\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `question_id`, `body`
+FROM `answers`
+WHERE `question_id` = \'22\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `question_id`, `body`
+FROM `answers`
+WHERE `question_id` = \'22\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `question_id`, `body`
+FROM `answers`
+WHERE `question_id` = :question_id:', [...], false)
+ 5 APPPATH\Models\AnswerModel.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Answers.php(39): App\Models\AnswerModel->getanswers('22')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-22 06:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 06:40:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 06:40:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 06:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 06:53:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 06:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 06:54:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 06:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 06:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 06:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:01:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:01:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:57:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:58:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:58:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:58:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 09:58:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:01:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:01:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:01:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:02:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:08:08 --> Question ID: 4, Action: up
+INFO - 2024-04-22 10:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:08:24 --> Question ID: 4, Action: up
+INFO - 2024-04-22 10:08:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:08:30 --> Question ID: 4, Action: down
+INFO - 2024-04-22 10:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:14:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:14:27 --> Question ID: 4, Action: up
+INFO - 2024-04-22 10:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:14:30 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:24:00 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:24:01 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:24:02 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:24:02 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:24:35 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:24:36 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:24:43 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:28:08 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:28:09 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:28:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:28:11 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:28:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:28:11 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:28:16 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:28:18 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:28:18 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:28:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:28:25 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:28:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:28:25 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:28:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:28:26 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:31:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:31:03 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:31:04 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:31:05 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:31:06 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:31:07 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:31:08 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:31:16 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:31:17 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:31:17 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:31:17 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:31:18 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:31:18 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:31:18 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:34:33 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:34:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:34:34 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:34:35 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:34:36 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:35:40 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:37:30 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:38:43 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:38:57 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:38:58 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:38:59 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:38:59 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:38:59 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:38:59 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:38:59 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:38:59 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:39:05 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:39:05 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:39:05 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:39:05 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:40:29 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:42:00 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:43:49 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:43:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:43:56 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:45:43 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:45:49 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:47:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:47:38 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:47:39 --> Question ID: 3, Action: down
+INFO - 2024-04-22 10:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:48:04 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:48:29 --> Question ID: 3, Action: up
+INFO - 2024-04-22 10:49:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 10:49:01 --> Question ID: 3, Action: up
+INFO - 2024-04-22 11:47:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 11:47:36 --> Question ID: 3, Action: up
+INFO - 2024-04-22 11:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 11:47:44 --> Question ID: 3, Action: down
+INFO - 2024-04-22 11:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 11:47:44 --> Question ID: 3, Action: down
+INFO - 2024-04-22 11:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 11:47:44 --> Question ID: 3, Action: down
+INFO - 2024-04-22 11:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 11:47:44 --> Question ID: 3, Action: down
+INFO - 2024-04-22 11:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 11:47:44 --> Question ID: 3, Action: down
+INFO - 2024-04-22 11:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 11:47:45 --> Question ID: 3, Action: down
+INFO - 2024-04-22 11:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 11:47:45 --> Question ID: 3, Action: down
+INFO - 2024-04-22 11:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 11:47:45 --> Question ID: 3, Action: down
+INFO - 2024-04-22 11:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 11:47:45 --> Question ID: 3, Action: down
+INFO - 2024-04-22 11:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 11:47:45 --> Question ID: 3, Action: down
+INFO - 2024-04-22 11:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 11:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 11:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 11:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 11:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 11:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 11:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 11:51:50 --> Question ID: 3, Action: up
+INFO - 2024-04-22 11:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 11:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 11:51:55 --> Question ID: 3, Action: down
+INFO - 2024-04-22 11:51:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-22 13:34:25 --> ErrorException: Undefined variable $questions
+in APPPATH\Views\answer.php on line 102.
+ 1 APPPATH\Views\answer.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questions', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 102)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(41): view('answer')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-22 13:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-22 13:34:29 --> ErrorException: Undefined variable $questions
+in APPPATH\Views\answer.php on line 102.
+ 1 APPPATH\Views\answer.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questions', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 102)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(41): view('answer')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-22 13:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 13:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 13:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 13:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 13:36:08 --> Question ID: 3, Action: up
+INFO - 2024-04-22 13:36:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 13:36:09 --> Question ID: 3, Action: up
+INFO - 2024-04-22 13:36:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 13:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 13:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 13:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 13:37:26 --> Question ID: 3, Action: up
+INFO - 2024-04-22 13:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 13:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 13:39:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 13:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 13:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 16:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 16:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 16:44:55 --> Question ID: 3, Action: up
+INFO - 2024-04-22 16:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 16:44:58 --> Question ID: 3, Action: down
+INFO - 2024-04-22 16:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 16:45:12 --> Question ID: 3, Action: down
+CRITICAL - 2024-04-22 16:58:24 --> ErrorException: Undefined array key "votes"
+in APPPATH\Views\answer.php on line 118.
+ 1 APPPATH\Views\answer.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "votes"', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 118)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(44): view('answer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-22 16:58:25 --> ErrorException: Undefined array key "votes"
+in APPPATH\Views\answer.php on line 118.
+ 1 APPPATH\Views\answer.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "votes"', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 118)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(44): view('answer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-22 16:58:25 --> ErrorException: Undefined array key "votes"
+in APPPATH\Views\answer.php on line 118.
+ 1 APPPATH\Views\answer.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "votes"', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 118)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(44): view('answer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-22 16:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 16:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 16:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 16:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 16:59:24 --> Question ID: 2, Action: up
+INFO - 2024-04-22 16:59:48 --> Question ID: 3, Action: up
+INFO - 2024-04-22 16:59:56 --> Question ID: 3, Action: up
+INFO - 2024-04-22 16:59:58 --> Question ID: 3, Action: up
+INFO - 2024-04-22 17:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 17:22:25 --> Question ID: 1, Action: down
+INFO - 2024-04-22 17:22:34 --> Question ID: 2, Action: up
+INFO - 2024-04-22 17:23:21 --> Question ID: 2, Action: up
+INFO - 2024-04-22 17:23:29 --> Question ID: 3, Action: down
+INFO - 2024-04-22 17:23:34 --> Question ID: 3, Action: down
+INFO - 2024-04-22 17:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 17:23:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 17:23:45 --> Question ID: 3, Action: up
+INFO - 2024-04-22 17:23:52 --> Question ID: 3, Action: down
+INFO - 2024-04-22 17:24:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 17:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 17:24:15 --> Question ID: 1, Action: down
+INFO - 2024-04-22 17:25:00 --> Question ID: 3, Action: down
+INFO - 2024-04-22 17:25:26 --> Question ID: 3, Action: up
+INFO - 2024-04-22 17:25:37 --> Question ID: 3, Action: up
+INFO - 2024-04-22 17:25:43 --> Question ID: 2, Action: up
+INFO - 2024-04-22 17:25:51 --> Question ID: 1, Action: down
+INFO - 2024-04-22 17:26:01 --> Question ID: 1, Action: down
+INFO - 2024-04-22 17:26:44 --> Question ID: 3, Action: down
+INFO - 2024-04-22 17:26:49 --> Question ID: 2, Action: down
+INFO - 2024-04-22 17:30:02 --> Question ID: 2, Action: up
+INFO - 2024-04-22 17:30:06 --> Question ID: 2, Action: down
+INFO - 2024-04-22 17:30:10 --> Question ID: 2, Action: down
+INFO - 2024-04-22 17:30:14 --> Question ID: 2, Action: down
+INFO - 2024-04-22 17:30:17 --> Question ID: 2, Action: up
+INFO - 2024-04-22 17:30:19 --> Question ID: 2, Action: up
+INFO - 2024-04-22 17:30:22 --> Question ID: 2, Action: up
+INFO - 2024-04-22 17:30:26 --> Question ID: 2, Action: up
+INFO - 2024-04-22 17:30:32 --> Question ID: 2, Action: up
+INFO - 2024-04-22 17:30:35 --> Question ID: 2, Action: up
+INFO - 2024-04-22 17:30:38 --> Question ID: 2, Action: down
+INFO - 2024-04-22 17:30:41 --> Question ID: 2, Action: down
+INFO - 2024-04-22 17:30:44 --> Question ID: 2, Action: down
+INFO - 2024-04-22 17:31:15 --> Question ID: 2, Action: up
+INFO - 2024-04-22 17:31:20 --> Question ID: 2, Action: up
+INFO - 2024-04-22 17:31:23 --> Question ID: 2, Action: up
+INFO - 2024-04-22 17:31:27 --> Question ID: 2, Action: down
+INFO - 2024-04-22 17:31:30 --> Question ID: 2, Action: down
+INFO - 2024-04-22 17:31:34 --> Question ID: 2, Action: down
+INFO - 2024-04-22 17:31:40 --> Question ID: 3, Action: up
+INFO - 2024-04-22 17:33:21 --> Question ID: 2, Action: up
+INFO - 2024-04-22 17:33:26 --> Question ID: 2, Action: down
+INFO - 2024-04-22 17:33:29 --> Question ID: 3, Action: up
+INFO - 2024-04-22 17:33:33 --> Question ID: 3, Action: down
+INFO - 2024-04-22 17:33:46 --> Question ID: 3, Action: down
+INFO - 2024-04-22 17:33:49 --> Question ID: 3, Action: up
+INFO - 2024-04-22 17:34:25 --> Question ID: 2, Action: up
+INFO - 2024-04-22 17:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 17:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 17:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 17:34:43 --> Question ID: 2, Action: down
+INFO - 2024-04-22 17:34:53 --> Question ID: 2, Action: up
+INFO - 2024-04-22 17:35:33 --> Question ID: 2, Action: down
+INFO - 2024-04-22 17:36:13 --> Question ID: 2, Action: up
+INFO - 2024-04-22 17:36:38 --> Question ID: 2, Action: up
+INFO - 2024-04-22 17:36:59 --> Question ID: 2, Action: down
+INFO - 2024-04-22 17:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 17:38:01 --> Question ID: 2, Action: down
+INFO - 2024-04-22 17:38:33 --> Question ID: 2, Action: down
+INFO - 2024-04-22 17:38:54 --> Question ID: 2, Action: up
+INFO - 2024-04-22 17:38:58 --> Question ID: 3, Action: up
+INFO - 2024-04-22 17:39:02 --> Question ID: 3, Action: down
+INFO - 2024-04-22 17:44:25 --> Question ID: 3, Action: down
+INFO - 2024-04-22 17:44:28 --> Question ID: 3, Action: up
+INFO - 2024-04-22 17:44:31 --> Question ID: 2, Action: up
+INFO - 2024-04-22 17:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 17:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 17:45:12 --> Question ID: 4, Action: up
+INFO - 2024-04-22 17:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 18:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 18:14:10 --> Question ID: 3, Action: up
+INFO - 2024-04-22 18:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 18:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 18:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 18:14:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 18:14:51 --> Question ID: 3, Action: up
+INFO - 2024-04-22 18:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 18:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 18:15:21 --> Question ID: 2, Action: down
+INFO - 2024-04-22 18:15:24 --> Question ID: 2, Action: up
+INFO - 2024-04-22 18:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 18:16:05 --> Question ID: 3, Action: up
+INFO - 2024-04-22 18:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 18:17:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 18:17:07 --> Question ID: 3, Action: down
+INFO - 2024-04-22 18:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 18:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 18:17:11 --> Question ID: 3, Action: down
+INFO - 2024-04-22 18:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 18:17:22 --> Question ID: 2, Action: up
+INFO - 2024-04-22 18:17:25 --> Question ID: 2, Action: down
+INFO - 2024-04-22 18:58:20 --> Question ID: 2, Action: down
+CRITICAL - 2024-04-22 19:23:30 --> ErrorException: Undefined array key "isAccepted"
+in APPPATH\Views\answer.php on line 127.
+ 1 APPPATH\Views\answer.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "isAccepted"', 'C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php', 127)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\serverCw\\app\\Views\\answer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('answer', [], true)
+ 5 APPPATH\Controllers\Answers.php(44): view('answer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Answers->createAnswer()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Answers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-22 19:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 19:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 19:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 19:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 19:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 21:04:58 --> Question ID: 5, Action: down
+INFO - 2024-04-22 21:05:02 --> Question ID: 5, Action: up
+INFO - 2024-04-22 21:05:04 --> Question ID: 5, Action: up
+INFO - 2024-04-22 21:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 21:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 21:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 21:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 21:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 21:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 21:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 21:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-22 21:06:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
